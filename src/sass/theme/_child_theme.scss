@@ -1,0 +1,149 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+@mixin hover-focus-active() {
+  &:hover,
+  &:focus,
+  &:active {
+    @content;
+  }
+}
+
+@mixin hover-focus() {
+  &:hover,
+  &:focus,
+  &:active {
+    @content;
+  }
+}
+
+@mixin bmd-hover-focus-active {
+  // add the .active to the whole mix of hover-focus-active
+  &.active {
+    @content;
+  }
+  @include hover-focus-active() {
+    @content;
+  }
+}
+
+h1,
+h2,
+h3 {
+  color: $orange;
+}
+
+.text-light-gray {
+  color: $gray-500;
+}
+
+p {
+  font-size: 1.3rem;
+  color: $gray-700;
+}
+
+.lead {
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.navbar-light {
+  font-family: Helvetica, 'Segoe UI', Verdana, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  .navbar-brand {
+    color: $navbar-light-brand-color;
+    max-width: 225px;
+
+    @include hover-focus {
+      color: $navbar-light-brand-hover-color;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $navbar-light-color;
+
+      @include hover-focus {
+        color: $navbar-light-hover-color;
+      }
+
+      &.disabled {
+        color: $navbar-light-disabled-color;
+      }
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      color: $navbar-light-active-color;
+    }
+  }
+
+  .navbar-toggler {
+    color: $navbar-light-color;
+    border-color: $navbar-light-toggler-border-color;
+  }
+
+  .navbar-toggler-icon {
+    background-image: $navbar-light-toggler-icon-bg;
+  }
+
+  .navbar-text {
+    color: $navbar-light-color;
+    a {
+      color: $navbar-light-active-color;
+
+      @include hover-focus {
+        color: $navbar-light-active-color;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  #desktop-logo {
+    display: none;
+  }
+  #mobile-nav-wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  #mobile-logo {
+    max-width: 200px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #mobile-logo {
+    display: none;
+  }
+}
+/* blog */
+.blog {
+  article {
+    margin-top: 2rem;
+    .entry-header .entry-title {
+      font-size: 1.5rem;
+    }
+
+    .entry-content .p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+aside {
+  ul li {
+    margin-bottom: 1rem;
+
+    a {
+      color: #555;
+    }
+  }
+}
+
+/* CF7 */
+.post-31 .entry-content .wpcf7 {
+  margin: 0 !important;
+}
