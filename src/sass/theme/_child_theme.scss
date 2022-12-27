@@ -125,14 +125,38 @@ p {
     margin-top: 4rem;
     .entry-header {
       margin-bottom: 1rem;
+      .entry-title {
+        font-size: 1.5rem;
+        a {
+          text-decoration: none;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
     }
-    .entry-header .entry-title {
-      font-size: 1.5rem;
+
+    .entry-meta {
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
     }
 
     .entry-content .p {
       margin-top: 2rem;
       font-size: 1.2rem;
+    }
+
+    .entry-footer {
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
     }
   }
   article:first-child {
@@ -144,6 +168,12 @@ p {
   article {
     .entry-header {
       margin-bottom: 1.5rem;
+    }
+    .entry-meta a {
+      text-decoration: none;
+      :hover {
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -157,6 +187,14 @@ aside {
       color: #555;
     }
   }
+}
+
+.btn-primary {
+  color: $white !important;
+}
+
+.btn-primary:hover {
+  color: $white !important;
 }
 
 /* CF7 */
