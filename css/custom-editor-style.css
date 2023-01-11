@@ -1,4 +1,12 @@
 @charset "UTF-8";
+:root {
+  --bs-body-bg: #9a98ab;
+}
+
+body {
+  background-color: #9a98ab !important;
+}
+
 *,
 *::before,
 *::after {
@@ -418,7 +426,7 @@ progress {
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
   --bs-black: #000;
-  --bs-white: #fff;
+  --bs-white: #f1eff6;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
   --bs-gray-100: #f8f9fa;
@@ -446,19 +454,19 @@ progress {
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
-  --bs-white-rgb: 255, 255, 255;
+  --bs-white-rgb: 241, 239, 246;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-body-bg-rgb: 241, 239, 246;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-gradient: linear-gradient(180deg, rgba(241, 239, 246, 0.15), rgba(241, 239, 246, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #fff;
+  --bs-body-bg: #f1eff6;
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
@@ -650,15 +658,15 @@ progress {
 }
 
 .table-dark {
-  --bs-table-color: #fff;
+  --bs-table-color: #f1eff6;
   --bs-table-bg: #212529;
-  --bs-table-border-color: #373b3e;
-  --bs-table-striped-bg: #2c3034;
-  --bs-table-striped-color: #fff;
-  --bs-table-active-bg: #373b3e;
-  --bs-table-active-color: #fff;
-  --bs-table-hover-bg: #323539;
-  --bs-table-hover-color: #fff;
+  --bs-table-border-color: #36393e;
+  --bs-table-striped-bg: #2b2f33;
+  --bs-table-striped-color: #f1eff6;
+  --bs-table-active-bg: #36393e;
+  --bs-table-active-color: #f1eff6;
+  --bs-table-hover-bg: #313438;
+  --bs-table-hover-color: #f1eff6;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
 }
@@ -705,7 +713,7 @@ progress {
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #fff;
+  background-color: #f1eff6;
   border: 1px solid var(--bs-border-color);
   border-radius: 0.375rem;
   max-width: 100%;
@@ -858,7 +866,7 @@ progress {
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
   --bs-black: #000;
-  --bs-white: #fff;
+  --bs-white: #f1eff6;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
   --bs-gray-100: #f8f9fa;
@@ -886,19 +894,19 @@ progress {
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
-  --bs-white-rgb: 255, 255, 255;
+  --bs-white-rgb: 241, 239, 246;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-body-bg-rgb: 241, 239, 246;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-gradient: linear-gradient(180deg, rgba(241, 239, 246, 0.15), rgba(241, 239, 246, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #fff;
+  --bs-body-bg: #f1eff6;
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
@@ -927,12 +935,12 @@ progress {
 }
 
 .text-bg-secondary {
-  color: #fff !important;
+  color: #000 !important;
   background-color: RGBA(108, 117, 125, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-success {
-  color: #fff !important;
+  color: #000 !important;
   background-color: RGBA(25, 135, 84, var(--bs-bg-opacity, 1)) !important;
 }
 
@@ -947,7 +955,7 @@ progress {
 }
 
 .text-bg-danger {
-  color: #fff !important;
+  color: #000 !important;
   background-color: RGBA(220, 53, 69, var(--bs-bg-opacity, 1)) !important;
 }
 
@@ -957,7 +965,7 @@ progress {
 }
 
 .text-bg-dark {
-  color: #fff !important;
+  color: #f1eff6 !important;
   background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1)) !important;
 }
 
@@ -972,14 +980,14 @@ progress {
   color: #6c757d !important;
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: #565e64 !important;
+  color: #899197 !important;
 }
 
 .link-success {
   color: #198754 !important;
 }
 .link-success:hover, .link-success:focus {
-  color: #146c43 !important;
+  color: #479f76 !important;
 }
 
 .link-info {
@@ -1000,7 +1008,7 @@ progress {
   color: #dc3545 !important;
 }
 .link-danger:hover, .link-danger:focus {
-  color: #b02a37 !important;
+  color: #e35d6a !important;
 }
 
 .link-light {
@@ -2367,7 +2375,7 @@ progress {
 
 .text-white-50 {
   --bs-text-opacity: 1;
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: rgba(241, 239, 246, 0.5) !important;
 }
 
 .text-reset {
@@ -5247,16 +5255,16 @@ progress {
 
 .has-white-color,
 .has-white-color:visited {
-  color: #fff;
+  color: #f1eff6;
 }
 
 .has-white-background-color {
-  background-color: #fff;
-  border-color: #fff;
+  background-color: #f1eff6;
+  border-color: #f1eff6;
 }
 
 .wp-block-button:hover .wp-block-button__link.has-white-background-color.has-white-color {
-  color: #fff;
+  color: #f1eff6;
 }
 
 .has-gray-color,

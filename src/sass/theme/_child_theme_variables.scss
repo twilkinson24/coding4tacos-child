@@ -5,6 +5,17 @@
 $orange: #f13e02; // Thats a sample how you could change a BootStrap variable.
 $primary: $orange; // Once we've changed the value, we'll also make it the primary brand color.
 
+$white: #f1eff6;
+
 $navbar-light-color: $primary;
 $btn-border-radius: 0 0.25rem 0.25rem 0;
 $input-border-radius: 0.25rem 0 0 0.25rem;
+
+
+:root {
+    --bs-body-bg: #9a98ab;
+  }
+
+body {
+    background-color: #9a98ab !important;
+}

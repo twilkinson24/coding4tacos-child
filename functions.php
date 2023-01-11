@@ -9,6 +9,11 @@
 defined( 'ABSPATH' ) || exit;
 
 
+/*
+* Tweaked Parent theme functions
+*/ 
+require_once get_theme_file_path( 'inc/overriden-parent-theme-functions.php' );
+
 
 /**
  * Removes the parent themes stylesheet and scripts from inc/enqueue.php
