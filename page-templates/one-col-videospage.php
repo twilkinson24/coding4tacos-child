@@ -38,15 +38,11 @@ $loop = new WP_Query($args);
 
         <div class="row">
 
-            <div class="col-md-12 content-area" id="primary">
+            <div class="videos col-md-12 content-area" id="primary">
 
                 <main class="site-main" id="main" role="main">
-                    <div class="row">
-                        <h3 class="w-100 has-text-align-center text-light-gray lead my-5">Web Development // Freelancing
-                            // WordPress // Learning to Code </h3>
-                    </div>
                     <ul class="list-unstyled">
-                        <div class="row"><!-- start row -->
+                        <div class="row videos-width"><!-- start row -->
                             <?php
                             while ($loop->have_posts()):
                                 ?>
@@ -56,7 +52,7 @@ $loop = new WP_Query($args);
                                 <div class="col-md-12">
                                     <?php get_template_part('loop-templates/content', 'video'); ?>
                                 </div>
-                                <?php endwhile; // end of the loop. ?>
+                            <?php endwhile; // end of the loop. ?>
                         </div> <!-- end row -->
                     </ul>
                     <div class="row mt-5">

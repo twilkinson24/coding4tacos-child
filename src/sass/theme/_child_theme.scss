@@ -29,7 +29,6 @@ body {
   background-color: #f1eff6 !important;
 }
 
-
 h1,
 h2,
 h3 {
@@ -48,6 +47,10 @@ p {
 .lead {
   font-size: 1.5rem;
   color: #222;
+}
+
+header {
+  margin-bottom: 2rem;
 }
 
 .navbar-light {
@@ -127,36 +130,13 @@ p {
 }
 /* blog */
 .blog {
-  article {
-    margin-top: 4rem;
-    .entry-header {
-      margin-bottom: 1rem;
-      .entry-title {
-        font-size: 1.5rem;
-        a {
-          text-decoration: none;
-        }
-        a:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-
-    .entry-meta {
-      a {
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-    }
-
-    .entry-content .p {
-      margin-top: 2rem;
-      font-size: 1.2rem;
-    }
-
-    .entry-footer {
+  article:first-child {
+    margin-top: 0;
+  }
+  .entry-header {
+    margin-bottom: 1rem;
+    .entry-title {
+      font-size: 1.5rem;
       a {
         text-decoration: none;
       }
@@ -165,8 +145,28 @@ p {
       }
     }
   }
-  article:first-child {
-    margin-top: 0;
+
+  .entry-meta {
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .entry-content .p {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .entry-footer {
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -193,6 +193,22 @@ aside {
       color: #555;
     }
   }
+}
+
+.videos-width {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.videos-width {
+  li:first-child article {
+    margin-top: 0;
+  }
+}
+
+article {
+  margin-top: 4rem;
 }
 
 .btn-primary {
