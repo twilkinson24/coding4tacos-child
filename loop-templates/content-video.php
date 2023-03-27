@@ -8,7 +8,7 @@
 // Exit if accessed directly.
 defined('ABSPATH') || exit;
 ?>
-<li>
+<li class="col-8 mx-auto">
     <article <?php post_class(); ?> id="post-
     <?php the_ID(); ?>">
 

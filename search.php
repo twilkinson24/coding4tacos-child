@@ -42,19 +42,23 @@ $container = get_theme_mod('understrap_container_type');
                 </header><!-- .page-header -->
 
                 <?php /* Start the Loop */?>
-                <?php while (have_posts()):
-                        the_post(); ?>
+                <ul class="list-unstyled blog-list">
+                    <?php while (have_posts()):
+                            the_post(); ?>
 
-                <?php
-                        /**
-                         * Run the loop for the search to output the results.
-                         * If you want to overload this in a child theme then include a file
-                         * called content-search.php and that will be used instead.
-                         */
-                        get_template_part('loop-templates/content', 'search');
+                        <?php
+                            /**
+                             * Run the loop for the search to output the results.
+                             * If you want to overload this in a child theme then include a file
+                             * called content-search.php and that will be used instead.
+                             */
+                            echo '<li>';
+                            get_template_part('loop-templates/content', 'search');
+                            echo '</li>';
                         ?>
 
-                <?php endwhile; ?>
+                    <?php endwhile; ?>
+                </ul>
 
                 <?php else: ?>
 

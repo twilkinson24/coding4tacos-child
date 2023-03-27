@@ -41,19 +41,15 @@ $loop = new WP_Query($args);
             <div class="videos col-md-12 content-area" id="primary">
 
                 <main class="site-main" id="main" role="main">
-                    <ul class="list-unstyled">
-                        <div class="row videos-width"><!-- start row -->
+                    <ul class="video-list list-unstyled row">
+                        <?php
+                        while ($loop->have_posts()):
+                            ?>
                             <?php
-                            while ($loop->have_posts()):
-                                ?>
-                                <?php
-                                $loop->the_post();
-                                ?>
-                                <div class="col-md-12">
-                                    <?php get_template_part('loop-templates/content', 'video'); ?>
-                                </div>
-                            <?php endwhile; // end of the loop. ?>
-                        </div> <!-- end row -->
+                            $loop->the_post();
+                            ?>
+                                <?php get_template_part('loop-templates/content', 'video'); ?>
+                        <?php endwhile; // end of the loop. ?>
                     </ul>
                     <div class="row mt-5">
                         <?php
